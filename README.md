@@ -1,7 +1,6 @@
 <img align="right" width="200" height="100" src="https://ada-school.org/wp-content/uploads/2022/02/ada-school-logo.svg">
 
-
-## Frontend Mentor 👩‍💻 👨‍💻 Code Challenge
+## Frontend Mentor 👩‍💻 👩🏻‍💻 👨🏾‍💻 👨‍💻 👩🏽‍💻 👨🏻‍💻 Code Challenge
 
 Thank you 🙏 for taking the time to implement this coding challenge to build a small functional Web Application FrontEnd using *JavaScript* or *TypeScript* as prefered.
 
