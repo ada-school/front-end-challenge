@@ -16,8 +16,8 @@ Thank you 🙏 for taking the time to implement this coding challenge to build a
 
 A bus company wants to start using technology and allow their users to book online tickets. Please help them build a simple Web UI with the following functionalities:
 * Simple form to create a new booking (origin, destination, number of passengers, date and time)
-* Display the bookings on list view.
-* Display Booking full detailes when clicking on list item.
+* Display the bookings on a list view.
+* Display Booking full detailes when clicking on a list item.
 
 *Note:* Use any UI libraries that you prefer.  
 
@@ -31,6 +31,7 @@ A bus company wants to start using technology and allow their users to book onli
 ## Desired technology stack:
 * JavaScript or TypeScript
 * React or Angular or Vue
+* NPM or YARN
 
 ## Submit your solution
 
