@@ -30,7 +30,7 @@ A bus company wants to start using technology and allow their users to book onli
 ## Desired technology stack:
 * JavaScript or TypeScript
 * React or Angular or Vue
-* NPM or YARN
+* npm or Yarn
 
 ## Submit your solution
 
