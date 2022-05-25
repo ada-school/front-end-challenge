@@ -22,7 +22,7 @@ A bus company wants to allow their users to book online tickets. Please help the
 *Note:* Use any UI libraries of your choice.  
 
 ## Expected Quality Attributes:
-* Using coding best practices: Code style, naming conventions, etc.
+* Use coding best practices: Code style, naming conventions, etc.
 * Correct data modeling to store information in a flexible way.
 * Create reusable components and functions.
 * Correct architecture to be able to plug API services in the future.
