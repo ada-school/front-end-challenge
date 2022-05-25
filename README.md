@@ -8,32 +8,32 @@ Thank you 🙏 for taking the time to implement this coding challenge to build a
 
 * Take 2-4 hours to implement your project.
 * Use coding best practices.
-* Create and share the Repository used to store your solution.
+* Create a fork of this repo and share your solution when finished.
 
 
 ## Coding Challenge  💻 
 
-A bus company wants to start using technology and allow their users to book online tickets. Please help them build a simple Web UI with the following functionalities:
+A bus company wants to allow their users to book online tickets. Please help them build a simple Web UI with the following requirements:
 * Simple form to create a new booking (origin, destination, number of passengers, date and time)
 * Display the bookings on a list view.
-* Display Booking full detailes when clicking on a list item.
+* Display Booking full details when clicking on a list item.
+* Bookings should be stored in LocalStorage
 
-*Note:* Use any UI libraries that you prefer.  
+*Note:* Use any UI libraries of your choice.  
 
 ## Expected Quality Attributes:
-* Using coding best practices.
-* Correct usage of JSON.
-* Clear usage of functions.
-* Create reusable components.
-* Store data temporary using data structures correctly.
+* Using coding best practices: Code style, naming conventions, etc.
+* Correct data modeling to store information in a flexible way.
+* Create reusable components and functions.
+* Correct architecture to be able to plug API services in the future.
 
 ## Desired technology stack:
 * JavaScript or TypeScript
 * React or Angular or Vue
-* NPM or YARN
+* npm or Yarn
 
 ## Submit your solution
 
-Once you're done, please send us a confirmation email with your repository link to [talento@ada-school.org](mailto:talento@ada-school.org). After you submit your code, we will contact you to discuss next steps. 
+Once you're done, please send us an email to [talento@ada-school.org](mailto:talento@ada-school.org) with your repository link. After you submit your code, we will review it and contact you to discuss next steps. 
 
 Good luck! 💪
