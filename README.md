@@ -34,6 +34,6 @@ A bus company wants to allow their users to book online tickets. Please help the
 
 ## Submit your solution
 
-Once you're done, please send us an email to [tech@ada-school.org](mailto:tech@ada-school.org) with the subjet: TECH_CHALLENGE_[YOUR NAME] and a link to your repository link. After you submit your code, we will review it and contact you to discuss next steps. 
+Once you're done, please send us an email to [tech@ada-school.org](mailto:tech@ada-school.org) with the subject: TECH_CHALLENGE_[YOUR NAME] and do not forget to include the link to your repository with the solution. After you submit your code, we will review it and contact you to discuss next steps. 
 
 Good luck! 💪
