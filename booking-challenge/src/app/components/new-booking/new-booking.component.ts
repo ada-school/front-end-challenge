@@ -26,12 +26,10 @@ export class NewBookingComponent implements OnInit {
   saveForm(){
     const myBookings = localStorage.getItem("myBookings");
     if (myBookings) {
-      let newBookings = JSON.parse(myBookings);
+      const newBookings = JSON.parse(myBookings);
       newBookings.push(this.newBooking.value)
       localStorage.setItem("myBookings", JSON.stringify(newBookings));  
-      console.log(newBookings)
     } else {
-      console.log(this.newBooking.value);
       localStorage.setItem("myBookings", JSON.stringify([this.newBooking.value]));  
     }
   }
