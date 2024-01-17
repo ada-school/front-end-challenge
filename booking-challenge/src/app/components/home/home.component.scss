@@ -1,0 +1,21 @@
+@import "../../../assets/variables";
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.title {
+  font-family: $text;
+  margin: 0;
+  color: #3f51b5;
+}
+.airplane {
+  height: 200px;
+}
+.btns-container {
+  display: flex;
+  gap: 20px;
+}
