@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { BookingModalComponent } from '../booking-modal/booking-modal.component';
+import { Booking } from '../interfaces';
 
 @Component({
   selector: 'app-booking-list',
@@ -10,17 +13,24 @@ export class BookingListComponent implements OnInit {
   myBookings:any;
   constructor(
     private router: Router,
+    public dialog: MatDialog,
     ) { }
 
   ngOnInit(): void {
     this.getMyBookings();
   }
-  goToHome() {
-    this.router.navigate(['']);
+  goTo(route:string) {
+    this.router.navigate([route]);
   }
   getMyBookings(){
     this.myBookings = localStorage.getItem("myBookings");
     this.myBookings = JSON.parse(this.myBookings);
-    console.log(this.myBookings);
+  }
+  openDialog(bookingInfo:Booking): void {
+    this.dialog.open(BookingModalComponent, {
+      maxWidth: '700px',
+      width: '90%',
+      data: bookingInfo,
+    });
   }
 }

@@ -1,0 +1,15 @@
+@import "../../../assets/variables";
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title-text {
+  font-family: $text;
+  margin: 0;
+  color: #3f51b5;
+}
+.booking-info {
+  font-family: $text; 
+}

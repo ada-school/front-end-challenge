@@ -1,0 +1,14 @@
+<section>
+  <header mat-dialog-title>
+    <h2 class="title-text">{{data.origin}}</h2>
+    <mat-icon color="primary">arrow_right_alt</mat-icon>
+    <h2 class="title-text">{{data.destination}}</h2> 
+  </header>
+  <article mat-dialog-content>
+    <p class="booking-info">Origin: {{data.origin}}</p>
+    <p class="booking-info">Destination: {{data.destination}}</p>
+    <p class="booking-info">Number of Passengers: {{data.numPassengers}}</p>
+    <p class="booking-info">Date: {{data.date | date:'longDate'}}</p>
+    <p class="booking-info">Hour: {{data.hour}}</p>
+  </article>  
+</section>

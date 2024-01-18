@@ -1,18 +1,19 @@
 <section class="container">
   <div class="iconAndTitle">
-    <button mat-icon-button color="primary" (click)="goToHome()">
+    <button mat-icon-button color="primary" (click)="goTo('')">
       <mat-icon>chevron_left</mat-icon>
     </button>
-    <h1 class="title">My Bookings:</h1>
+    <h1 class="text">My Bookings:</h1>
   </div>
-  <article *ngIf="!myBookings; else bookingsCards">
-    <h1 class="title">No bookings yet</h1>
+  <article class="no-bookings" *ngIf="!myBookings; else bookingsCards">
+    <h2 class="text">No bookings yet</h2>
+    <button mat-raised-button color="primary" (click)="goTo('new-booking')">Create new booking</button> 
   </article>
   <ng-template #bookingsCards>
-    <article *ngFor="let booking of myBookings" class="bookingCards">
-     <h2 class="title">{{booking.origin}}</h2>
+    <article *ngFor="let booking of myBookings" (click)="openDialog(booking)"class="bookingCards">
+     <h2 class="text">{{booking.origin}}</h2>
      <mat-icon color="primary">arrow_right_alt</mat-icon>
-     <h2 class="title">{{booking.destination}}</h2>
+     <h2 class="text">{{booking.destination}}</h2>
     </article>
   </ng-template>
 </section>

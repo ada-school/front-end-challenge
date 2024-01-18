@@ -11,12 +11,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { NewBookingComponent } from './components/new-booking/new-booking.component';
 import { BookingListComponent } from './components/booking-list/booking-list.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookingModalComponent } from './components/booking-modal/booking-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BookingListComponent,
     HomeComponent,
     NewBookingComponent,
+    BookingModalComponent,
   ],
   imports: [
     BrowserModule,    
@@ -37,7 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatNativeDateModule,
     MatSelectModule,
     MatIconModule,
-    MatCardModule
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

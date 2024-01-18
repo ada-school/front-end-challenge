@@ -1,6 +1,5 @@
-interface Hours {
-  value: string;
-}
+import { Hours } from './interfaces';
+
 export const availableHours: Hours[] = [
     {value: '8:00 am'},
     {value: '9:00 am'},
