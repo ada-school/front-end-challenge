@@ -1,1 +1,18 @@
-<p>booking-list works!</p>
+<section class="container">
+  <div class="iconAndTitle">
+    <button mat-icon-button color="primary" (click)="goToHome()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <h1 class="title">My Bookings:</h1>
+  </div>
+  <article *ngIf="!myBookings; else bookingsCards">
+    <h1 class="title">No bookings yet</h1>
+  </article>
+  <ng-template #bookingsCards>
+    <article *ngFor="let booking of myBookings" class="bookingCards">
+     <h2 class="title">{{booking.origin}}</h2>
+     <mat-icon color="primary">arrow_right_alt</mat-icon>
+     <h2 class="title">{{booking.destination}}</h2>
+    </article>
+  </ng-template>
+</section>

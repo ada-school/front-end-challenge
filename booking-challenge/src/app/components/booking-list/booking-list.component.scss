@@ -1,0 +1,29 @@
+@import "../../../assets/variables";
+
+.iconAndTitle {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  font-family: $text;
+  margin: 0;
+  color: #3f51b5;
+}
+
+.bookingCards {
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
