@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { availableHours } from '../constants';
 
@@ -18,7 +19,8 @@ export class NewBookingComponent implements OnInit {
   });
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -28,9 +30,13 @@ export class NewBookingComponent implements OnInit {
     if (myBookings) {
       const newBookings = JSON.parse(myBookings);
       newBookings.push(this.newBooking.value)
-      localStorage.setItem("myBookings", JSON.stringify(newBookings));  
+      localStorage.setItem("myBookings", JSON.stringify(newBookings));
     } else {
       localStorage.setItem("myBookings", JSON.stringify([this.newBooking.value]));  
     }
+    this.goToHome();
+  }
+  goToHome() {
+    this.router.navigate(['']);
   }
 }

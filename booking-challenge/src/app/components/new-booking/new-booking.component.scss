@@ -1,5 +1,20 @@
+@import "../../../assets/variables";
+
+.iconAndTitle {
+  display: flex;
+  align-items: center;
+}
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.title {
+  font-family: $text;
+  margin: 0;
+  color: #3f51b5;
+}
 form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }

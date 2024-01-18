@@ -1,31 +1,39 @@
-<form [formGroup]="newBooking" (ngSubmit)="saveForm()">
-  <mat-form-field appearance="outline">
-    <mat-label>Origin</mat-label>
-    <input matInput placeholder=""  formControlName="origin">
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Destination</mat-label>
-    <input matInput placeholder=""  formControlName="destination">
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Number of Passengers</mat-label>
-    <input matInput placeholder="" type="number" formControlName="numPassengers">
-    <mat-hint>Max 10 passengers</mat-hint>
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker" formControlName="date">
-    <mat-hint>MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Hour</mat-label>
-    <mat-select formControlName="hour">
-      <mat-option *ngFor="let hour of hours" [value]="hour.value">
-        {{hour.value}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-  <button mat-raised-button color="primary" type="submit" [disabled]="newBooking.invalid">Save Booking</button>  
-</form>
+<section>
+  <div class="iconAndTitle">
+    <button mat-icon-button color="primary" (click)="goToHome()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <h1 class="title">New Booking:</h1>  
+  </div>
+  <form [formGroup]="newBooking" (ngSubmit)="saveForm()">
+    <mat-form-field appearance="outline">
+      <mat-label>Origin</mat-label>
+      <input matInput placeholder=""  formControlName="origin">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Destination</mat-label>
+      <input matInput placeholder=""  formControlName="destination">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Number of Passengers</mat-label>
+      <input matInput placeholder="" type="number" formControlName="numPassengers">
+      <mat-hint>Max 10 passengers</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Hour</mat-label>
+      <mat-select formControlName="hour">
+        <mat-option *ngFor="let hour of hours" [value]="hour.value">
+          {{hour.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="newBooking.invalid">Save Booking</button>  
+  </form>
+</section>
