@@ -37,6 +37,6 @@ export class NewBookingComponent implements OnInit {
     this.goToHome();
   }
   goToHome() {
-    this.router.navigate(['']);
+    this.router.navigate(['booking-list']);
   }
 }
