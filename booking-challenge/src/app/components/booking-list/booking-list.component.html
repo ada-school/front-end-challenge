@@ -5,9 +5,8 @@
     </button>
     <h1 class="text">My Bookings:</h1>
   </div>
-  <article class="no-bookings" *ngIf="!myBookings; else bookingsCards">
-    <h2 class="text">No bookings yet</h2>
-    <button mat-raised-button color="primary" (click)="goTo('new-booking')">Create new booking</button> 
+  <article *ngIf="!myBookings; else bookingsCards">
+    <h2 class="text no-bookings">No bookings yet</h2>
   </article>
   <ng-template #bookingsCards>
     <article *ngFor="let booking of myBookings" (click)="openDialog(booking)"class="bookingCards">
@@ -16,4 +15,5 @@
      <h2 class="text">{{booking.destination}}</h2>
     </article>
   </ng-template>
+  <button mat-raised-button color="primary" (click)="goTo('new-booking')">Create new booking</button> 
 </section>
